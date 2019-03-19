@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="按纽控件  基本样式  12345678910&amp;lt;button type=&quot;button&quot; class=&quot;btn&quot;&amp;gt;默认按纽&amp;lt;/button&amp;gt;&amp;lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&amp;gt;主要按纽&amp;lt;/button&amp;gt;&amp;lt;button type=&quot;button&quot; class=&quot;btn btn-seconda">
+<meta name="description" content="按纽  基本样式  12345678910&amp;lt;button type=&quot;button&quot; class=&quot;btn&quot;&amp;gt;默认按纽&amp;lt;/button&amp;gt;&amp;lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&amp;gt;主要按纽&amp;lt;/button&amp;gt;&amp;lt;button type=&quot;button&quot; class=&quot;btn btn-secondary">
 <meta name="keywords" content="web,bootstrap">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Bootstrap4 按纽">
+<meta property="og:title" content="Bootstrap4 按纽及按纽组">
 <meta property="og:url" content="http://yoursite.com/2018/03/17/Bootstrap4-按纽/index.html">
 <meta property="og:site_name" content="YoRhaリペアモード">
-<meta property="og:description" content="按纽控件  基本样式  12345678910&amp;lt;button type=&quot;button&quot; class=&quot;btn&quot;&amp;gt;默认按纽&amp;lt;/button&amp;gt;&amp;lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&amp;gt;主要按纽&amp;lt;/button&amp;gt;&amp;lt;button type=&quot;button&quot; class=&quot;btn btn-seconda">
+<meta property="og:description" content="按纽  基本样式  12345678910&amp;lt;button type=&quot;button&quot; class=&quot;btn&quot;&amp;gt;默认按纽&amp;lt;/button&amp;gt;&amp;lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&amp;gt;主要按纽&amp;lt;/button&amp;gt;&amp;lt;button type=&quot;button&quot; class=&quot;btn btn-secondary">
 <meta property="og:locale" content="jp">
-<meta property="og:updated_time" content="2019-03-18T16:06:51.919Z">
+<meta property="og:updated_time" content="2019-03-19T12:21:31.821Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Bootstrap4 按纽">
-<meta name="twitter:description" content="按纽控件  基本样式  12345678910&amp;lt;button type=&quot;button&quot; class=&quot;btn&quot;&amp;gt;默认按纽&amp;lt;/button&amp;gt;&amp;lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&amp;gt;主要按纽&amp;lt;/button&amp;gt;&amp;lt;button type=&quot;button&quot; class=&quot;btn btn-seconda">
+<meta name="twitter:title" content="Bootstrap4 按纽及按纽组">
+<meta name="twitter:description" content="按纽  基本样式  12345678910&amp;lt;button type=&quot;button&quot; class=&quot;btn&quot;&amp;gt;默认按纽&amp;lt;/button&amp;gt;&amp;lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&amp;gt;主要按纽&amp;lt;/button&amp;gt;&amp;lt;button type=&quot;button&quot; class=&quot;btn btn-secondary">
 
 
 
@@ -126,7 +126,7 @@
 
 
 
-  <title>Bootstrap4 按纽 | YoRhaリペアモード</title>
+  <title>Bootstrap4 按纽及按纽组 | YoRhaリペアモード</title>
   
 
 
@@ -270,7 +270,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Bootstrap4 按纽</h1>
+          <h1 class="post-title" itemprop="name headline">Bootstrap4 按纽及按纽组</h1>
         
 
         <div class="post-meta">
@@ -352,7 +352,7 @@
       
 
       
-        <h1 id="按纽控件"><a href="#按纽控件" class="headerlink" title="按纽控件"></a><strong>按纽控件</strong></h1><hr>
+        <h1 id="按纽"><a href="#按纽" class="headerlink" title="按纽"></a><strong>按纽</strong></h1><hr>
 <blockquote>
 <p><strong>基本样式</strong></p>
 </blockquote>
@@ -379,6 +379,11 @@
 <p><strong>禁用和激活</strong><br><strong>.active</strong> 类可以设置按纽是可用的，<strong>disabled属性</strong> 可以设置按纽不可点击。<strong>a标签不支持disabled属性可以通过添加 .disabled类来禁止链接点击</strong></p>
 </blockquote>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">class</span>=<span class="string">"btn btn-primary active"</span>&gt;</span>点击后的按纽<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">class</span>=<span class="string">"btn btn-primary"</span> <span class="attr">disabled</span>&gt;</span>禁止点击的按纽<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">""</span> <span class="attr">class</span>=<span class="string">"btn btn-primary disabled"</span>&gt;</span>禁止点击的链接<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<hr>
+<p>#按纽组<br>可以使用 <strong>.btn-group</strong>来创建按纽组。使用 <strong>.btn-group-lg|sm</strong> 来设置按纽组的大小。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"btn-group"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">button</span> <span class="attr">class</span>=<span class="string">"btn btn-secondary"</span>&gt;</span>1<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">button</span> <span class="attr">class</span>=<span class="string">"btn btn-secondary"</span>&gt;</span>2<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">button</span> <span class="attr">class</span>=<span class="string">"btn btn-secondary"</span>&gt;</span>3<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>使用 <strong>.btn-group-vertical</strong> 可以创建垂直的按纽组。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"btn-group-vertical"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">button</span> <span class="attr">class</span>=<span class="string">"btn btn-secondary"</span>&gt;</span>1<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">button</span> <span class="attr">class</span>=<span class="string">"btn btn-secondary"</span>&gt;</span>2<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">button</span> <span class="attr">class</span>=<span class="string">"btn btn-secondary"</span>&gt;</span>3<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -448,6 +453,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/03/20/Bootstrap4-卡片/" rel="prev" title="Bootstrap4 卡片">
+                Bootstrap4 卡片 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -534,7 +543,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -545,7 +554,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>
@@ -611,7 +620,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#按纽控件"><span class="nav-number">1.</span> <span class="nav-text">按纽控件</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#按纽"><span class="nav-number">1.</span> <span class="nav-text">按纽</span></a></li></ol></div>
             
 
           </div>
@@ -784,7 +793,7 @@
         var disqus_config = function () {
           this.page.url = 'http://yoursite.com/2018/03/17/Bootstrap4-按纽/';
           this.page.identifier = '2018/03/17/Bootstrap4-按纽/';
-          this.page.title = 'Bootstrap4 按纽';
+          this.page.title = 'Bootstrap4 按纽及按纽组';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://ugoku.disqus.com/embed.js';
